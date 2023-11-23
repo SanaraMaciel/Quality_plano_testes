@@ -1,0 +1,5 @@
+Que um bug é tudo que acontece no sistema diferentemente do que foi especificado como o ideal. Um defeito é um erro encontrado num código ou num documento e uma falha é o resultado ou manifestação de um ou mais defeitos;
+Que ao encontrar um bug é importante reportá-lo imediatamente, reproduzir o bug ao menos três vezes e testar a ocorrência dele em outras plataformas e módulos similares;
+Que o custo de corrigir um bug é muito maior do que criar mecanismos para evitá-los, então devemos prevenir bugs nos atentando ao sistema desde sua documentação;
+O reporte de bugs consiste em descrever bem o bug de forma precisa a fim que todo o time consiga reproduzi-lo;
+Classificamos bugs no sistema por severidade. Então, eles se dividem em: blockers (que bloqueiam nossos testes), críticos e graves, moderados e pequenos. Especificamos a severidade no nosso plano de teste, considerando o impacto deles no sistema.

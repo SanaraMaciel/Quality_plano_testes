@@ -1,0 +1,41 @@
+[02:18] O teste de regressão consiste em testar nas versões mais recentes do software as outras coisas que estão relacionadas à modificação que fizemos para ver se não surgiram novos defeitos nas funcionalidades que já estavam prontas.
+
+[02:35] Ou seja, precisamos analisar todos aqueles componentes relacionados para ver se eles permaneceram inalterados.
+
+[02:43] Se, por exemplo, algum novo erro foi inserido em uma funcionalidade que não necessariamente é a funcionalidade de comentário de fotos, falamos que o nosso sistema regrediu, ou seja, aquela funcionalidade colocou um erro, e fazemos esse teste de regressão justamente para garantir que esses erros não aconteçam.
+
+[03:02] A funcionalidade, por exemplo, de login e cadastro, não têm nada a ver com a funcionalidade de upload de fotos, então elas não fazem parte do nosso teste de regressão. Isso não significa que você não pode testar para garantir.
+
+[03:15] Mas o teste de regressão consiste em justamente testarmos tudo o que tem relacionado com aquele componente novo que foi adicionado.
+
+[03:24] E como sabemos disso? Nós sabemos disso perguntando, por exemplo, para o time quais são as funcionalidades afetadas por aquela nova implementação; e sabemos também conhecendo mais sobre a arquitetura do nosso sistema; e também explorando o sistema e vendo as coisas que são relacionadas ou não.
+
+[03:43] De repente, vale a pena fazer um outro fluxograma daquele que fizemos nas aulas passadas, com tudo o que aquela funcionalidade afeta para você garantir que você vai testar tudo o que impacta a nova funcionalidade.
+
+[03:56] Outro teste relacionado a mudança é o chamado teste de fumaça, ou Smoke Test no inglês; as pessoas costumam falar bastante Smoke Test também.
+
+[04:06] Com ele você testa as principais funcionalidades afetadas por aquela alteração, só que não necessariamente tudo. Ou seja, no teste regressivo precisamos pegar todos aqueles cenários no nosso plano de teste.
+
+[04:21] Por exemplo, a funcionalidade de comentário foi adicionada, então para todas aquelas funcionalidades como a do upload de fotos, eu terei que voltar no meu test plan, ver todos os cenários que eu planejei e testar todos eles de novo.
+
+[04:33] No teste de fumaça eu faço um cenário mais simples, só para garantir que as coisas críticas estão funcionando.
+
+[04:40] Eu faço isso, por exemplo, quando eu não tenho tempo para testar todas as funcionalidades regressivas e eu tenho que dar prioridade para algumas. Então eu seleciono, por exemplo, os testes que são mais importantes e que não podem falhar de jeito nenhum, e eu faço esse teste de fumaça neles.
+
+[04:54] Outro teste que temos também, relacionado às mudanças que temos no nosso sistema depois que ele já está pronto é um teste de sanidade. É bem parecido com o nosso Smoke Test, também não testamos tudo, apenas as coisas mais importantes. Mas são as coisas mais importantes do sistema como um todo.
+
+[05:12] Então nesse caso, por exemplo, testamos o nosso login e o nosso cadastro, que não podem falhar de jeito nenhum. Mas não faríamos todos aqueles cenários que fizemos para o login e nem todos aqueles cenários para o cadastro.
+
+[05:25] Como é só um teste de sanidade, só precisamos garantir que tudo o que é mais crítico está funcionando, fazemos geralmente os cenários felizes, que é um login com sucesso, um cadastro com sucesso; coisas bem críticas do nosso sistema.
+
+[05:37] E esse teste de sanidade também pode ser feito em produção, por exemplo. Se quisermos garantir que o nosso login nunca vai parar de funcionar, podemos, por exemplo, fazer um teste automatizado em produção.
+
+[05:49] Então ele fica rodando várias vezes no dia aquele login e tem um alerta. Se o login parar de funcionar, nós saberemos. Não necessariamente porque colocamos uma funcionalidade nova que afetou, mas, por exemplo, que algum servidor caiu, então é importante ter esse tipo de controle. E o teste de sanidade serve para isso.
+
+[06:07] Mas também serve quando fazemos uma mudança grande no nosso sistema e precisamos garantir que tudo está funcionando, mas às vezes também não temos um tempo enorme para fazer um teste regressivo no sistema inteiro e escolhemos fazer esse teste de sanidade.
+
+[06:23] É bem importante lembrar que tudo isso tem riscos, e esses riscos precisam ser compartilhados com o time. Fazer um teste regressivo é o mais seguro, você testa todos os cenários de todas as funcionalidades que estão relacionadas com aquela mudança.
+
+[06:36] Mas o Smoke Test e o teste de sanidade são boas alternativas se o time quiser, por exemplo, comprar um risco e entregar alguma coisa mais rapidamente.
+
+[06:48] Agora que vimos mais sobre esses testes que são relacionados a mudanças, a seguir veremos sobre mais técnicas de execução de testes.

@@ -1,0 +1,5 @@
+planilha reporte de bug
+
+id/titulo/ passos para reprodução/resultado esperado/ versão/ 
+plataforma/ navegador/ criticidade(critico/bloqueia)/ status(novo/emcorreção/corrigido)
+/evidencia

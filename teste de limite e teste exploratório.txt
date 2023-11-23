@@ -1,0 +1,51 @@
+[01:26] Isso que acabamos de fazer é um teste de limite. O teste de limite consiste em testar o valor mínimo e o valor máximo, porque geralmente é onde dá problema.
+
+[01:38] Se limitamos, por exemplo, que uma senha tenha 18 caracteres e colocamos essa mensagem no cadastro falando que ela precisa ter no máximo 18 caracteres, precisamos garantir que isso é verdade.
+
+[01:50] No caso do nosso sistema não foi verdade. Eu coloquei uma senha que tinha 18 caracteres, que é a senha que eu copiei, e ele deu um erro. Então encontramos um bug fazendo esse teste de limite.
+
+[02:07] Nessa técnica, sempre testamos, como eu disse, o valor mínimo e valor máximo. Também, claro, temos que testar valores fora desse range de mínimo e máximo. Eu também posso testar uma senha com 7 caracteres para ver se o sistema vai me bloquear.
+
+[02:23] Se eu colocar, por exemplo, 1234567, ele está me bloqueando. Se eu colocar oito ele tem que aceitar.
+
+[02:31] O teste de limite não é fazer esses testes fora. Temos que fazer esse teste fora do limite, com menos e com mais caracteres, mas precisamos testar também o início, o valor mínimo e o valor máximo.
+
+[02:43] E todos os lugares que têm esses valores numéricos, justamente com esses ranges de valores numéricos, são bons lugares para fazer esse tipo de teste de limite.
+
+[02:55] Olhando o nosso plano de teste, que outras funcionalidades vocês veem que também têm esse range de limites? No nosso comentário de fotos, por exemplo, ele fala no nosso plano de teste que tem um limite de 140 caracteres. Então esse também é um bom lugar para fazer um teste de limite.
+
+[03:15] Voltando para a tela de login, vou então logar, porque para esse teste que eu farei agora eu preciso estar logada. Então vou digitar o meu usuário que eu criei anteriormente, que é o “user_teste”, e a senha dele, que é 12345678, e clicar no botão de login.
+
+[03:35] Eu voltei para a página inicial do AluraPic, e agora eu quero fazer um teste nesse botão de curtir. Vamos dar uma olhada agora no que o nosso test plan tem a dizer sobre esse botão de curtir. Ele está na parte de detalhes das fotos.
+
+[03:53] Ele fala que o ícone de coração deve mudar de cor. O usuário deve conseguir curtir uma mensagem ao clicar no ícone de coração, e o ícone de coração deve mudar de cor. Então vamos ver se isso acontece.
+
+[04:07] Eu vou clicar no nosso ícone de coração e vou curtir. Ele até mudou do número 0 para 1, mas o ícone de coração não mudou de cor.
+
+[04:18] Isso que acabamos de fazer foi um teste de estado. Um teste de estado é um teste de uma mudança que tem que ter no estado de uma coisa quando aplicamos determinado evento.
+
+[04:34] Ou seja, ao curtir esse botão ele deveria sair do estado desse botão branco e ir para um botão vermelho. Ou seja, esse botão tem dois estados: o estado de um botão branco e o estado de um botão vermelho, ou teria.
+
+[04:53] Precisamos sempre testar esses dois estados. Isso é um cenário bem simples, mas em casos mais complexos o sistema pode ter vários estados. Se pensarmos, por exemplo, em um semáforo, ele já tem três estados: um vermelho, um verde e um amarelo. E um evento é aplicado para essa mudança de estado.
+
+[05:17] É importante dizer que, por exemplo, uma vez que eu cliquei nesse botão e ele ficou vermelho, então até um outro evento acontecer ele deveria ficar vermelho, se eu tivesse um botão de descurtir, por exemplo.
+
+[05:30] Esses testes de estados também podem ser feitos, por exemplo, com um diagrama de estado, que nada mais é do que pegar todos esses estados e falar os eventos que aplicamos sobre eles e o que acontece. Também facilita para planejar todos os nossos testes e saber todos os estados que esse botão pode ter.
+
+[05:51] Até agora, nesses testes funcionais que fizemos, sempre tivemos um escopo definido e uma técnica por trás. Você deve estar pensando o seguinte: “Eu posso fazer algum tipo de teste que é só explorar o sistema? Eu clico na nossa home, eu navego nas fotos, eu tenho que procurar alguma coisa, sem nenhum tipo de procedimento, de uma forma mais informal? Esse teste daria algum tipo de resultado?”
+
+[06:24] Existe um teste assim. Por exemplo, eu poderia só explorar, ver tudo que o sistema tem, clicar no menu. Esse é o chamado teste exploratório.
+
+[06:33] Os testes exploratórios servem mais para você conhecer o sistema. Quando, por exemplo, você tem um primeiro contato com um sistema, você lê o plano de teste e dá uma olhada, explora o sistema.
+
+[06:45] Ele realmente é um teste informal, você não precisa de nenhum tipo de cenário pré-definido. E você consegue, por exemplo, dar algumas sugestões de usabilidade.
+
+[06:56] Por exemplo, temos esse ícone de mais para o upload de fotos. Será que está claro que isso é um mais? Eu olhando assim a primeiro momento posso achar que não é isso. Então eu clico e ele me redireciona para a tela de upload de fotos.
+
+[07:15] Então o teste exploratório até serve para pegar esse tipo de coisa. Mas se eu achar um erro no sistema quando eu estou fazendo esse teste exploratório, eu provavelmente terei que fazer de novo um teste mais planejado, para eu realmente ver o passo a passo de como eu fiz para encontrar aquele erro.
+
+[07:37] Então os testes exploratórios existem e são bem bons para você conhecer o sistema a primeiro momento, para uma pessoa que não está acostumada, e para achar alguns problemas, por exemplo, de usabilidade.
+
+[07:48] Mas, além disso, eles são um pouco mais difíceis de saber a origem do erro, já que você só está explorando o sistema. Então é bem legal você fazer, mas não podemos esquecer de que a maioria dos testes são sim bem estruturados.
+
+[08:03] Até agora falamos bastante sobre testes funcionais e sobre testar as funcionalidades do nosso sistema. Mas a seguir falaremos um pouco sobre testes não funcionais, que é o que tem além das funcionalidades do nosso sistema.

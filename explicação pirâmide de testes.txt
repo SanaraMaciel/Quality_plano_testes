@@ -1,0 +1,5 @@
+Na base da pirâmide ficam os testes da menor parte testável de uma aplicação, aqueles que testam a classe ou uma função dentro do código, ou seja, os testes de unidade.
+
+No meio, os testes de integração, que testam como diferentes módulos do sistema interagem entre si, como os de comunicação entre serviços, comunicação com bancos de dados e assim por diante.
+
+No topo, teremos os testes de ponta a ponta que buscam testar todo o fluxo de funcionamento da aplicação.

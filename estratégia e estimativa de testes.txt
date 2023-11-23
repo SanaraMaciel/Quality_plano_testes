@@ -1,0 +1,19 @@
+estimativa de teste
+
+Lembre-se de pensar na média de tempo e complexidade que será necessária para executar cada cenário. Leve em consideração também:
+
+O tamanho do produto
+O AluraPìc é um produto pequeno, então até o momento a execução de nenhum teste que fizemos demorou mais de 10 minutos.
+Complexidade e domínio do software
+A quantidade de regras de negócio de um sistema influencia na sua complexidade. 
+No caso do AluraPic, não temos tantas. Logo, ele é um sistema de baixa complexidade.
+Nível necessário de detalhes para documentação de teste, lembre-se de que se o projeto exige muita documentação, também é necessário um tempo maior para isso.
+Suas habilidades, experiência e conhecimento do sistema. Quanto tempo seria necessário para aprender todas as regras e montar todos os cenários no seu escopo do AluraPic?
+A quantidade de retrabalho necessário. Será necessário refazer muitos testes? Considerando a quantidade de bugs já encontrados, teríamos uma boa quantidade de retrabalho.
+
+
+
+
+Para criar uma estimativa para seus testes é preciso considerar fatores como a complexidade, domínio do software, detalhamento da documentação e quantidade de retrabalho;
+É importante metrificar a qualidade do sistema para saber em quais pontos acertamos em quais precisamos implementar melhorias;
+Existem métricas de qualidade como: total de Defeitos, total de defeitos em produção, total de defeitos removidos, tempo médio de reparo, quantidade de testes automatizados, cobertura de código e satisfação do usuário.

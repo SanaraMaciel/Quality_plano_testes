@@ -1,0 +1,24 @@
+Escopo do plano de teste
+PRÓXIMA ATIVIDADE
+
+Quando falamos do escopo de testes, nos referimos a definição do que o plano de testes deverá abranger e que parte do trabalho será responsabilidade de profissionais de QA. Observe os itens listados abaixo:
+
+I. Os tipos de testes que serão executados.
+
+II. A estratégia de lançamento do sistema.
+
+III. Pessoas ou time responsável pelos testes.
+
+V. Descrever quais funcionalidades não serão testadas.
+
+exemplo:
+
+Testes unitários: o código terá uma cobertura de 60% de testes unitários, que são de responsabilidade dos desenvolvedores.
+
+Testes de integração: serão executados testes de integração em todos os endpoints e esses testes serão de responsabilidade do time de qualidade.
+
+Testes automatizados: serão realizados testes end-to-end na funcionalidade de Login.
+
+Testes manuais: todas as funcionalidades serão testadas manualmente pelo time de qualidade seguindo a documentação de Cenários de teste e deste TestPlan.
+
+Versão beta: será lançada uma versão beta para 20 usuários pré-cadastrados antes do release.
